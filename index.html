@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/css/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="./assets/js/menu.js"></script>
+  <script type="text/javascript" src="./assets/js/redirecionar_email.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <title>Anthonny</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Anthonny Michael</h1>
+      </div>
+
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Sobre mim</a></li>
+          <li class="nav-item"><a href="#projetos-conteudo" class="nav-link">Projetos</a></li>
+          <div class="button">
+           <input type="submit" value="Contato" onclick="redirecionar();"/>
+          </div>
+        </ul>
+      </div>
+
+      <div class="btn-mobile">
+        <button onclick="show_menu();">
+          <img class="btn-icon" src="./img/menu/menu-sanduiche.svg" />
+        </button>
+      </div>
+    </nav>
+
+    <div class="responsive-nav">
+      <ul>
+        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="" class="nav-link">Sobre mim</a></li>
+        <li class="nav-item"><a href="#projetos-conteudo" class="nav-link">Projetos</a></li>
+        <li class="nav-item"><a href="mailto:anthonnybalbino2017@gmail.com" class="nav-link">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="conteudo">
+    <div class="text">
+      <p class="span1">OLÁ, TUDO BEM?</p>
+      <p class="span2">Sou Desenvolvedor Full Stack Web E Mobile</p>
+      <p class="span3">Sou desenvolvedor de sistemas para internet, como sites, landind pages, páginas Web, entre
+        outros.</p>
+      <p class="span4">Juntamente com desenvolvimento para aplicativos mobile, e uso de tecnologias como Python e C++.
+      </p>
+      <div class="icon">
+        <a href="https://www.instagram.com/michael_anthonny_/" class="link-icon" target="_blank"><span
+            class="fa fa-instagram fa-2x"></span></a>
+        <a href="https://github.com/Antonizinhobr" class="link-icon" target="_blank"><span
+            class="fa fa-github fa-2x"></span></a>
+        <a href="https://www.linkedin.com/in/anthonny-michael-5a18a1251/" class="link-icon" target="_blank"><span
+            class="fa fa-linkedin fa-2x"></span></a>
+        <a href="https://www.youtube.com/channel/UC88QEmxaSyY_V2vXn1RMgQQ" class="link-icon" target="_blank"><span
+            class="fa fa-youtube fa-2x"></span></a>
+      </div>
+    </div>
+    <div class="img-conteudo">
+      <img class="img" src="./img/img body/Imagem.png" />
+    </div>
+  </section>
+
+  <section class="tecnologias-cards" id="tecnologias">
+    <p class="span-tecnologia-1">Competências / Habilidades</p>
+    <p class="span-tecnologia-2">Conhecimentos adquiridos</p>
+    <div class="cards-conteudo">
+      <div class="cards">
+        <img class="html5" src="./img/img tecnologias/Html 5.png" />
+        <span>Html 5</span>
+      </div>
+      <div class="cards">
+        <img class="css3" src="./img/img tecnologias/Css.jpg" />
+        <span>Css3</span>
+      </div>
+      <div class="cards">
+        <img class="js" src="./img/img tecnologias/Js.png" />
+        <span>JavaScript</span>
+      </div>
+      <div class="cards">
+        <img class="react" src="./img/img tecnologias/react-js.png" />
+        <span>React</span>
+      </div>
+    </div>
+    <div class="cards-conteudo-2">
+      <div class="cards-2">
+        <img class="python" src="./img/img tecnologias/Python.svg.png" />
+        <span>Python</span>
+      </div>
+      <div class="cards-2">
+        <img class="c++" src="./img/img tecnologias/C++.png" />
+        <span>C++</span>
+      </div>
+      <div class="cards-2">
+        <img class="php" src="./img/img tecnologias/php.png" />
+        <span>PHP</span>
+      </div>
+      <div class="cards-2">
+        <img class="nodejs" src="./img/img tecnologias/nodejs.png" />
+        <span>Node.Js</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="projetos" id="projetos-conteudo">
+    <p class="title"> Meus Projetos Front-End E Back-End</p>
+    <div class="projetos-praticos">
+      <div class="cards-projetos">
+        <img src="./img/img projetos/projeto 1/Imagem 1.png" alt="" class="img-projetos-1">
+        <p class="text-projeto-1">Esse projeto visa a criação de um formulário conectado a um banco de dados Sql.
+          Projeto CRUD. Formulário front-end e back-end.<br> <br>Tecnologias usadas: Html, Css, Php e MySql</p>
+        <a href="https://github.com/Antonizinhobr/Form-Responsive" class="link-projetos" target="_blank"><input
+            type="submit" value="Ver código"></a>
+      </div>
+      <div class="borda"></div>
+      <div class="cards-projetos">
+        <img src="./img/img projetos/projeto 2/Imagem 1.png" alt="" class="img-projetos-2">
+        <p class="text-projeto-1">Esse projeto visa a criação de um menu de navegação responsivo, adaptável em telas
+          de smartphones.<br><br>Tecnologias usadas: Html, Css e JavaScript</p>
+        <a href="https://github.com/Antonizinhobr/Menu-Responsivo" class="link-projetos" target="_blank"><input
+            type="submit" value="Ver código"></a>
+      </div>
+    </div>
+    <p class="title"> Meus Projetos Python</p>
+    <div class="projetos-2">
+      <div class="cards-projetos-2">
+        <img src="./img/img projetos/projeto 3/Imagem 1.png" alt="" class="img-projetos-3">
+        <p class="text-projeto-1">Projeto Python. Editor de tabela de banco de dados
+          MySql.<br><br>Tecnologias usadas: Python</p>
+        <a href="https://github.com/Antonizinhobr/Mysql-With-Python" class="link-projetos" target="_blank"><input
+            type="submit" value="Ver código"></a>
+      </div>
+      <div class="borda-2"></div>
+      <div class="cards-projetos-2">
+        <img src="./img/img projetos/projeto 4/Imagem 1.png" alt="" class="img-projetos-4">
+        <p class="text-projeto-1">Projeto Python. Calculadora básica em python<br><br>Tecnologias usadas: Python</p>
+        <a href="https://github.com/Antonizinhobr/Calculator-In-Python-With-Window" class="link-projetos"
+          target="_blank"><input type="submit" value="Ver código"></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-html">
+      <div class="text-footer">
+        <p>Anthonny Michael</p>
+      </div>
+      <div class="text-footer-2">
+        <p>Apaixonado pelo mundo da programação. Esse é meu primeiro portfólio, feito somente com conhecimentos
+          adquiridos com leitura de artigos e tutoriais<br>
+          sem nenhum curso, sendo totalmente auto-didático, até o presente momento, onde estou me especializando ainda
+          mais na minha área através da Microsoft Conecta+<br>
+          ótimo curso gratuito com certificação da própria Microsoft, atual líder de tecnologia do mercado global.
+        </p>
+      </div>
+      <div class="icon">
+        <a href="https://www.instagram.com/_anthonny_michael_dev/" class="link-icon" target="_blank"><span
+            class="fa fa-instagram fa-2x"></span></a>
+        <a href="https://github.com/Antonizinhobr" class="link-icon" target="_blank"><span
+            class="fa fa-github fa-2x"></span></a>
+        <a href="https://www.linkedin.com/in/anthonny-michael-64450a206/" class="link-icon" target="_blank"><span
+            class="fa fa-linkedin fa-2x"></span></a>
+        <a href="https://www.youtube.com/channel/UC88QEmxaSyY_V2vXn1RMgQQ" class="link-icon" target="_blank"><span
+            class="fa fa-youtube fa-2x"></span></a>
+      </div>
+      <div class="footer-end">
+        <p>Design By - Anthonny Michael</p>
+      </div>
+      <div class="button-top">
+        <a class="link-topo" href="#">&#9650;</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
